@@ -7,7 +7,9 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
+
 import { Product } from 'src/models/product';
+
 import { ServiceProduct } from 'src/services/product';
 
 @Controller('product')

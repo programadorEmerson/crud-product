@@ -1,12 +1,18 @@
-import { Product } from './models/product';
 import { Module } from '@nestjs/common';
-import { AppController } from './controllers/app';
-import { AppService } from './services/app';
-import { ControllerProducts } from './controllers/products';
-import { ServiceProduct } from './services/product';
-import { returnEnv } from './utils/returnEnv';
-import { EnvEnum } from './enums/enviroments';
 import { SequelizeModule } from '@nestjs/sequelize';
+
+import { Product } from 'src/models/product';
+
+import { AppService } from 'src/services/app';
+import { ServiceProduct } from 'src/services/product';
+
+import { AppController } from 'src/controllers/app';
+import { ControllerProducts } from 'src/controllers/products';
+
+import { returnEnv } from 'src/utils/returnEnv';
+
+import { EnvEnum } from 'src/enums/enviroments';
+
 import { Sequelize } from 'sequelize-typescript';
 
 @Module({

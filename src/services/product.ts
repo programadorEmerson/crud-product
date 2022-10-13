@@ -3,8 +3,9 @@ import {
   Injectable,
   NotFoundException,
 } from '@nestjs/common';
-import { Product } from 'src/models/product';
 import { InjectModel } from '@nestjs/sequelize';
+
+import { Product } from 'src/models/product';
 
 @Injectable()
 export class ServiceProduct {
